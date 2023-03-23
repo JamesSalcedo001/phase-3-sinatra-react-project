@@ -30,5 +30,10 @@ class ApplicationController < Sinatra::Base
     find_cat.to_json
   end
 
+  delete "/cats/:id" do
+    find_cat = Cat.find(params[:id])
+    find_cat.destroy
+  end
+
 
 end
