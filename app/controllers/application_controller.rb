@@ -35,5 +35,10 @@ class ApplicationController < Sinatra::Base
     find_cat.destroy
   end
 
+  get "/shelters" do
+    all_shelters = Shelter.all
+    all_shelters.to_json(include: :cats)
+  end
+
 
 end
