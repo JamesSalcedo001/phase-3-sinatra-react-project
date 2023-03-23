@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_23_215209) do
+ActiveRecord::Schema.define(version: 2023_03_23_220400) do
 
   create_table "cats", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 2023_03_23_215209) do
     t.string "descr"
     t.string "image"
     t.integer "shelter_id"
+  end
+
+  create_table "shelters", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.integer "employees"
+    t.string "image"
   end
 
 end
