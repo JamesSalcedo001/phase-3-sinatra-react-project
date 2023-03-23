@@ -40,5 +40,10 @@ class ApplicationController < Sinatra::Base
     all_shelters.to_json(include: :cats)
   end
 
+  get "/shelters/:id" do
+    shelter_find = Shelter.find(params[:id])
+    shelter_find.to_json(include: :cats)
+  end
+
 
 end
