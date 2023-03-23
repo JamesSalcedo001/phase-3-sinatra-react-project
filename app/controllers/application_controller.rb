@@ -12,5 +12,17 @@ class ApplicationController < Sinatra::Base
     find_cat.to_json(include: :shelter)
   end
 
+  post "/cats" do
+    new_cat = Cat.create(
+      name: params[:name]
+      age: params[:age]
+      breed: params[:breed]
+      descr: params[:descr]
+      image: params[:image]
+      shelter_id: params[:shelter_id]
+    )
+    new_cat.to_json(include: :shelter)
+  end
+
 
 end
