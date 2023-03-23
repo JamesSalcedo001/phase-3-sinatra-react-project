@@ -24,5 +24,11 @@ class ApplicationController < Sinatra::Base
     new_cat.to_json(include: :shelter)
   end
 
+  patch "/cats/:id" do
+    find_cat = Cat.find(params[:id])
+    find_cat.update(params)
+    find_cat.to_json
+  end
+
 
 end
