@@ -37,13 +37,13 @@ cats and shelters.
 # bundle exec rake db:seed
 => seeds the database with sample data from db/seeds.
 
-#bundle exec rake db:rollback
+# bundle exec rake db:rollback
 => rolls back most recent migration 
 
-bundle exec rake server
+# bundle exec rake server
 => runs the server
 
-rake -T
+# rake -T
 => shows a list of rake tasks
 ```
 
