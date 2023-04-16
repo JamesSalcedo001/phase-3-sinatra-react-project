@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_23_220400) do
+ActiveRecord::Schema.define(version: 2023_04_16_050743) do
 
   create_table "cats", force: :cascade do |t|
-    t.string "name"
-    t.integer "age"
+    t.string "cat_name"
     t.string "breed"
+    t.integer "age"
     t.string "descr"
-    t.string "image"
+    t.string "cat_image"
     t.integer "shelter_id"
   end
 
