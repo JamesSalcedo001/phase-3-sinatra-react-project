@@ -28,14 +28,14 @@ default: &default
 
 development:
   <<: *default
-  database: cs-sinatra-ar_development
+  database: cs_sinatra_ar_development
 
 test:
   <<: *default
-  database: cs-sinatra-ar_test
+  database: cs_sinatra_ar_test
 
 
 production:
   <<: *default
-  database: cs-sinatra-ar_production
+  database: cs_sinatra_ar_production
 
