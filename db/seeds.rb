@@ -1,6 +1,6 @@
 puts "🌱 seeding .... 🌱"
-Cat.destroy_all
-Shelter.destroy_all
+# Cat.destroy_all
+# Shelter.destroy_all
 
 
 Cat.create(cat_name: "Tabitha", breed: "american shorthair", age: 3, descr: "likes fishing in water", cat_image: "https://images.ctfassets.net/440y9b545yd9/250mPrOBEUesyo1imn2SmZ/9c6104c32076f06803834df2aafffe77/American-Shorthair850.jpg", shelter_id: 1)
